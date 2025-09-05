@@ -1,0 +1,332 @@
+/* General */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #111;
+  background: #fff;
+}
+
+/* Navbar */
+header {
+  position: sticky;
+  top: 0;
+  background: #fff;
+  padding: 15px 50px;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  z-index: 1000;
+}
+
+.navbar {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  font-weight: 600;
+}
+.logo span { color: #ff4b2b; }
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+.navbar ul li a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #333;
+  transition: color 0.3s;
+}
+.navbar ul li a:hover { color: #ff4b2b; }
+
+.nav-btn {
+  background: #111;
+  color: #fff;
+  padding: 8px 18px;
+  border-radius: 25px;
+  font-size: 14px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+.nav-btn:hover { background: #ff4b2b; }
+
+/* Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 10%;
+  background: linear-gradient(180deg, #fff 0%, #fff0f0 100%);
+}
+
+.hero-text {
+  max-width: 50%;
+}
+
+.intro {
+  font-family: 'Playfair Display', serif;
+  font-size: 60px;
+  font-weight: 400;
+  font-style: italic;
+  color: #333;
+}
+.intro span {
+  font-style: italic;
+  color: #222;
+}
+
+.name {
+  font-size: 55px;
+  font-weight: 700;
+  margin: 15px 0;
+}
+.name span { color: #ff4b2b; }
+
+.tagline {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 25px;
+}
+
+.btn {
+  background: #ff4b2b;
+  color: #fff;
+  padding: 12px 28px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+.btn:hover { background: #e43e1b; }
+
+.hire-btn { margin-top: 15px; }
+
+.hero-img img {
+  width: 380px;
+  border-radius: 15px;
+  object-fit: cover;
+  box-shadow: 0 6px 25px rgba(0,0,0,0.15);
+}
+
+
+/* ==========================
+   ABOUT SECTION STYLING
+   ========================== */
+.about {
+  padding: 80px 10%;
+  background: #fff;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.about-text {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #444;
+}
+
+.about-text p {
+  margin-bottom: 15px;
+}
+
+.about .btn {
+  display: inline-block;
+  margin-top: 20px;
+  background: #ff4b2b;
+  color: #fff;
+  padding: 12px 28px;
+  border-radius: 25px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.about .btn:hover {
+  background: #e43f24;
+}
+
+
+
+/* Sections */
+section { padding: 60px 10%; }
+.about, .contact { text-align: center; }
+
+/* Contact */
+.contact form {
+  max-width: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.contact input, .contact textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+.contact button { cursor: pointer; }
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #222;
+  color: white;
+}
+
+/* ✅ Projects Section */
+.projects {
+  padding: 80px 10%;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+.projects h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #222;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.project-card {
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.project-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.project-card p {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.project-card .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #ff5722;
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.project-card .btn:hover {
+  background: #e64a19;
+}
+
+/* Skills Section */
+.skills {
+  padding: 60px;
+  text-align: center;
+  background: #f9fafc;
+}
+
+.skills h2 {
+  margin-bottom: 40px;
+  font-size: 30px;
+  font-weight: 700;
+  color: #222;
+}
+
+.skill-bars {
+  max-width: 700px;
+  margin: auto;
+}
+
+.skill {
+  margin: 25px 0;
+  text-align: left;
+  position: relative;
+}
+
+.skill span {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+/* Progress Bar */
+.progress-bar {
+  background: #e0e0e0;
+  border-radius: 20px;
+  overflow: hidden;
+  height: 20px; /* ✅ thicker bars */
+  position: relative;
+}
+
+.progress {
+  height: 100%;
+  background: linear-gradient(90deg, #ff9966, #ff5e62); /* ✅ warm gradient */
+  border-radius: 20px;
+  transition: width 1s ease-in-out;
+}
+
+
+/* Percentage Text */
+.percent {
+  position: absolute;
+  right: 10px;
+  top: 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: #222;
+}
+
+/* DSA Section */
+.dsa-text {
+  font-size: 14px;
+  margin: 5px 0 10px;
+  color: #555;
+}
+
+.dsa-btn {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.dsa-btn .btn {
+  background: #ff5722;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.dsa-btn .btn:hover {
+  background: #e64a19;
+}

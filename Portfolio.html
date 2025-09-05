@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pranali | Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="Portfolio.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <h2 class="logo">Pranali<span>.</span></h2>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+
+      </ul>
+      <a href="#contact" class="btn nav-btn">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-text">
+      <h1 class="intro">Hey, <span>there</span></h1>
+      <h2 class="name">I am <span>Pranali Bamne</span></h2>
+      <p class="tagline">Frontend Developer | UI/UX Designer | Problem Solver</p>
+      <a href="#contact" class="btn hire-btn">Hire Me</a>
+    </div>
+    <div class="hero-img">
+      <img src="Images/Pranali Photo.jpg" alt="Pranali Bamne">
+    </div>
+  </section>
+  </section>
+
+
+<!-- About -->
+<section id="about" class="about">
+  <h2>About Me</h2>
+  <div class="about-text">
+    <p>
+      I’m <strong>Pranali Bamne</strong>, a passionate <strong>Computer Engineering 3rd-year student</strong>
+      with growing expertise in <strong>Frontend Development</strong> and <strong>UI/UX Design</strong>.
+    </p>
+    <p>
+      I love transforming ideas into interactive, user-friendly digital experiences. Currently, 
+      I’m sharpening my skills in <strong>React.js</strong>, <strong>JavaScript</strong>, and modern 
+      web technologies, while also building a strong foundation in <strong>Data Structures & Algorithms</strong>.
+    </p>
+    <p>
+      Beyond coding, I enjoy designing clean and creative layouts, experimenting with new design 
+      patterns, and ensuring every project feels both functional and beautiful. My ultimate goal is 
+      to become a <strong>Full-Stack Developer</strong> and contribute to impactful, real-world projects.
+    </p>
+    <a href="asssets/CV Pranali Bamne.pdf" target="_blank" class="btn">View Resume</a>
+  </div>
+</section>
+
+
+<!-- Skills Section -->
+<section id="skills" class="skills fade-in">
+  <h2>My Skills</h2>
+  <div class="skill-bars">
+
+    <div class="skill">
+      <span>HTML & CSS</span>
+      <div class="progress-bar"><div class="progress" style="width: 90%;"></div></div>
+      <span class="percent">90%</span>
+    </div>
+
+    <div class="skill">
+      <span>JavaScript</span>
+      <div class="progress-bar"><div class="progress" style="width: 80%;"></div></div>
+      <span class="percent">80%</span>
+    </div>
+
+    <div class="skill">
+      <span>React.js</span>
+      <div class="progress-bar"><div class="progress" style="width: 70%;"></div></div>
+      <span class="percent">70%</span>
+    </div>
+
+    <div class="skill">
+      <span>Tailwind CSS</span>
+      <div class="progress-bar"><div class="progress" style="width: 75%;"></div></div>
+      <span class="percent">75%</span>
+    </div>
+
+    <div class="skill">
+      <span>SQL</span>
+      <div class="progress-bar"><div class="progress" style="width: 65%;"></div></div>
+      <span class="percent">65%</span>
+    </div>
+
+    <div class="skill">
+      <span>DSA in C++</span>
+      <p class="dsa-text">I’m actively solving <strong>Data Structures & Algorithms</strong> problems in C++ 
+        to strengthen my problem-solving skills.</p>
+      <div class="progress-bar"><div class="progress" style="width: 60%;"></div></div>
+      <span class="percent">60%</span>
+      <div class="dsa-btn">
+        <a href="https://github.com/pranali-bamne/DSA-problems-GFG" target="_blank" class="btn">My DSA GitHub</a>
+      </div>
+    </div>
+
+    <div class="skill">
+      <span>Git & GitHub</span>
+      <div class="progress-bar"><div class="progress" style="width: 75%;"></div></div>
+      <span class="percent">75%</span>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+<!-- Projects Section -->
+<section id="projects" class="projects fade-in">
+  <h2>My Projects</h2>
+  <div class="project-grid">
+    <div class="project-card">
+      <h3>Hangman Game (Python)</h3>
+      <p>A fun word-guessing game built with Python.</p>
+      <a href="https://github.com/pranali-bamne/Hangman-Game-in-python-" target="_blank" class="btn">GitHub</a>
+    </div>
+
+    <div class="project-card">
+      <h3>Calculator (JavaScript)</h3>
+      <p>A simple and responsive calculator built with JavaScript.</p>
+      <a href="https://github.com/pranali-bamne/Calculator-Using-Javascript" target="_blank" class="btn">GitHub</a>
+    </div>
+
+    <div class="project-card">
+      <h3>Weekly Planner</h3>
+      <p>A planner app to organize daily and weekly tasks.</p>
+      <a href="https://github.com/pranali-bamne/Weekly-Planner" target="_blank" class="btn">GitHub</a>
+    </div>
+
+    <div class="project-card">
+      <h3>Taco Shop Website</h3>
+      <p>A static website for a taco shop using HTML & CSS.</p>
+      <a href="https://github.com/pranali-bamne/Taco-Shop-Using-Html" target="_blank" class="btn">GitHub</a>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Contact -->
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="email" id="email" placeholder="Your Email" required>
+      <textarea id="message" placeholder="Your Message"></textarea>
+      <button type="submit" class="btn">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Pranali Bamne | All Rights Reserved</p>
+  </footer>
+
+  <script src="Portfolio.js"></script>
+</body>
+</html>
