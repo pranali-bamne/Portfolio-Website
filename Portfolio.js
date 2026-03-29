@@ -1,3 +1,4 @@
+
 // Smooth fade-in animations
 const faders = document.querySelectorAll('.fade-in');
 const appearOnScroll = new IntersectionObserver((entries, observer) => {
@@ -23,3 +24,4 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
   let mailtoLink = `mailto:pranalibamne28@gmail.com?subject=Portfolio Contact from ${name}&body=${message} (Reply to: ${email})`;
   window.location.href = mailtoLink;
 });
+
