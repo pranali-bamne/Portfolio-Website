@@ -1,0 +1,26 @@
+.body
+{
+  text-align: center;
+}
+
+#bat
+{
+  border-radius: 5px;
+  border: 2px solid black;
+  color:orangered ;
+}
+
+#ball
+{
+  border-radius: 5px;
+  border: 2px solid black;
+  color: crimson;
+}
+
+#stump
+{
+  border-radius: 5px;
+  border: 2px solid black;
+  color: firebrick;
+}
+
